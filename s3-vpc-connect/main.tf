@@ -3,7 +3,7 @@ terraform {
     bucket = "terraform-tf-storage-bucket"
     key = "vpc-tfstate/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "dynamodb-tfstate"
+    #dynamodb_table = "dynamodb-tfstate"
   }
 }
 
