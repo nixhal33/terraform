@@ -28,3 +28,11 @@ resource "aws_subnet" "subnet_01_tf" {
         Name = "subnet-1"
     }
 }
+
+resource "aws_internet_gateway" "igw_tf" {
+    vpc_id = aws_vpc.vpc-1.id
+    tags = {
+      Name = "public igw tf"
+    }
+}
+
